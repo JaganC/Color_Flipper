@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
     <title>Color Flipper</title>
 </head>
+
 <body>
     <section id="app-content">
-        <div class="btn-container">
+        <div class="btn-block">
+            <h3>To change the background color 👇</h3>
             <button id="clickMeBtn" onclick="changeColorCode()" class="click-me-btn">
                 Click Me
             </button>
+        </div>
+        <div class="text-container">
+            <div class="text-block">
+                <p>Hex:&nbsp;&nbsp; <span id="hex">#34568B</span></p>
+                <button onclick="copyToClipboard('hex')" class="copy-btn">Copy</button>
             </div>
+            <div class="text-block">
+                <p><span id="rgb">rgb(52, 86, 139)</span></p>
+                <button onclick="copyToClipboard('rgb')" class="copy-btn">Copy</button>
+            </div>
+
+        </div>
     </section>
 </body>
-<script src="index.js" ></script>
+<script src="index.js"></script>
+
 </html>
