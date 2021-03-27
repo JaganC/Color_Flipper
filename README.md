@@ -1,2 +1,2 @@
-# Color_Flipper
+# Color Flipper
  Random Color Generator Using Vanilla JS
